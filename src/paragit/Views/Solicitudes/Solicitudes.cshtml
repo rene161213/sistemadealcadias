@@ -1,0 +1,20 @@
+﻿@model ListaSolicitudesViewModels
+
+@foreach (var solicitudes in Model.Solicitudes)
+{
+    <div class="col-lg-4 mb-4">
+        <div class="card h-100">
+            <h4 class="card-header">@solicitudes.fecha_solicitud</h4>
+            <div class="card-body">
+                <p class="card-text">@solicitudes.info_solicitada</p>
+            </div>
+            <div class="card h-100">
+                <p class="card-header">@solicitudes.Modoinfo.modo_info</p>
+            </div>
+           <div class="card-footer">
+                <a href="#" class="btn btn-primary">@solicitudes.id_solicitud</a>
+           </div>
+        </div>
+        </div>
+        
+        }

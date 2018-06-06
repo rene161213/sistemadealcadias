@@ -1,0 +1,28 @@
+﻿@model ListaSolicitudesViewModels
+<div class="row">
+    <div class="col-lg-8 mx-auto" align="center">
+        <table class="align-content-center" align="center" border="1">
+            <tr class="align-content-xl-center">
+                <th class="align-content-center">COD</th>
+                <th>NOMBRE</th>
+                <th>APELLIDO</th>
+                <th>FECHA NACIMIENTO</th>
+                <th>SEXO</th>
+                <th>CATEGORIA</th>
+            </tr>
+            @foreach (var empleado in Model.ListaEmpleado)
+            {
+                <tr>
+                    <th align="center">@empleado.id_empleado</th>
+                    <th align="center">@empleado.nom_empleado</th>
+                    <th align="center">@empleado.ape_empleado</th>
+                    <th align="center">@empleado.fnac_empleado</th>
+                    <th align="center">@empleado.sexo</th>
+                    <th align="center">@empleado.Categoria.categoria</th>
+                    
+                </tr>
+            }
+        </table>
+    </div>
+</div>
+

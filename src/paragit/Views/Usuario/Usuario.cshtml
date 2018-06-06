@@ -1,0 +1,28 @@
+﻿@model UsuarioViewModels
+<div class="row">
+    <div class="col-lg-8 mx-auto" align="center">
+        <table class="align-content-center" align="center" border="1">
+            <tr class="align-content-xl-center">
+                <th class="align-content-center">COD</th>
+                <th>NOMBRE</th>
+                <th>APELLIDO</th>
+                <th>FECHA NACIMIENTO</th>
+                <th>SEXO</th>
+                
+            </tr>
+            @foreach (var empleado in Model.Usuario)
+            {
+                <tr>
+                    <th align="center">@empleado.id_usuario</th>
+                    <th align="center">@empleado.nombre</th>
+                    <th align="center">@empleado.apellido</th>
+                    <th align="center">@empleado.fech_nacimiento</th>
+                    <th align="center">@empleado.sexo</th>
+                    
+
+                </tr>
+            }
+        </table>
+    </div>
+</div>
+
